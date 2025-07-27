@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
-# This script displays "To infinity and beyond" indefinitely and handles SIGTERM by printing "I am invincible!!!"
-trap 'echo "I am invincible!!!"' SIGTERM
-while true
-do
-  echo "To infinity and beyond"
-  sleep 2
-done
+# This script finds and sends SIGTERM to all running 7-highlander processes
+pkill -f 7-highlander
