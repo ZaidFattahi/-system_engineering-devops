@@ -1,4 +1,2 @@
 #!/bin/bash
 # This script adds execute permission to all directories in the current directory
-
-find . -maxdepth 1 -type d -exec chmod a+x {} \;
